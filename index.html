@@ -75,7 +75,8 @@
             <h1 class="text-2xl font-bold text-white">PZ Planner</h1>
             <p class="text-sm text-gray-400">Ultimate Edition</p>
         </div>
-        <nav class="mt-6">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <script src="animal_data.js"></script>
             <a href="#" id="habitat-planner-tab" class="sidebar-item active flex items-center py-3 px-6">
                 <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
                 <span>Habitat Planner</span>
@@ -425,21 +426,7 @@
         ];
         
         const exhibitAnimalData = [
-            { name: "Amazonian Giant Centipede", dlc: "Base Game", tempMin: 24, tempMax: 38, humidityMin: 70, humidityMax: 90, groupSize: [1, 1], isWalkthrough: false },
-            { name: "American Bullfrog", dlc: "North America", tempMin: 4, tempMax: 30, humidityMin: 60, humidityMax: 90, groupSize: [1, 4], isWalkthrough: false },
-            { name: "Axolotl", dlc: "Conservation", tempMin: 16, tempMax: 18, humidityMin: 80, humidityMax: 100, groupSize: [1, 4], isWalkthrough: false },
-            { name: "Boa Constrictor", dlc: "Base Game", tempMin: 24, tempMax: 38, humidityMin: 50, humidityMax: 70, groupSize: [1, 1], isWalkthrough: false },
-            { name: "Brazilian Salmon Pink Tarantula", dlc: "Base Game", tempMin: 24, tempMax: 36, humidityMin: 60, humidityMax: 80, groupSize: [1, 1], isWalkthrough: false },
-            { name: "Brazilian Wandering Spider", dlc: "Base Game", tempMin: 24, tempMax: 38, humidityMin: 70, humidityMax: 90, groupSize: [1, 1], isWalkthrough: false },
-            { name: "Butterflies (Assorted)", dlc: "Conservation", tempMin: 20, tempMax: 35, humidityMin: 60, humidityMax: 80, groupSize: [1, 500], isWalkthrough: true, requiredPlants: ["Black-eyed Susan", "Blue Porterweed", "Buddleja", "Common Lantana", "Egyptian Starcluster", "Ixora", "Mexican Sunflower", "Pincushion Flower", "Purpletop Vervain"] },
-            { name: "Common Death Adder", dlc: "Australia", tempMin: 24, tempMax: 38, humidityMin: 20, humidityMax: 40, groupSize: [1, 2], isWalkthrough: false },
-            { name: "Danube Crested Newt", dlc: "Wetlands", tempMin: 4, tempMax: 24, humidityMin: 70, humidityMax: 90, groupSize: [1, 4], isWalkthrough: false },
-            { name: "Diamondback Terrapin", dlc: "Aquatic", tempMin: 15, tempMax: 30, humidityMin: 40, humidityMax: 70, groupSize: [1, 5], isWalkthrough: false },
-            { name: "Dung Beetle", dlc: "Africa", tempMin: 20, tempMax: 40, humidityMin: 10, humidityMax: 30, groupSize: [1, 200], isWalkthrough: false },
-            { name: "Eastern Brown Snake", dlc: "Base Game", tempMin: 24, tempMax: 40, humidityMin: 20, humidityMax: 40, groupSize: [1, 1], isWalkthrough: false },
-            { name: "Egyptian Fruit Bat", dlc: "Twilight", tempMin: 20, tempMax: 40, humidityMin: 40, humidityMax: 60, groupSize: [20, 200], isWalkthrough: true },
-            { name: "Emerald Tree Boa", dlc: "Base Game", tempMin: 24, tempMax: 32, humidityMin: 70, humidityMax: 90, groupSize: [1, 2], isWalkthrough: false },
-            { name: "European Fire Salamander", dlc: "Europe", tempMin: 8, tempMax: 20, humidityMin: 70, humidityMax: 90, groupSize: [1, 4], isWalkthrough: false },
+        // animalData, exhibitAnimalData, compatibilityMap are now loaded from animal_data.js
             { name: "Gaboon Viper", dlc: "Base Game", tempMin: 22, tempMax: 32, humidityMin: 70, humidityMax: 90, groupSize: [1, 1], isWalkthrough: false },
             { name: "Gila Monster", dlc: "Base Game", tempMin: 22, tempMax: 38, humidityMin: 0, humidityMax: 20, groupSize: [1, 2], isWalkthrough: false },
             { name: "Giant Burrowing Cockroach", dlc: "Base Game", tempMin: 22, tempMax: 28, humidityMin: 60, humidityMax: 80, groupSize: [1, 20], isWalkthrough: false },
